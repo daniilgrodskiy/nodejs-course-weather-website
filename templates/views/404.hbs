@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>404</title>
+    <link rel="icon" href="/img/weather.png">
+    <!-- 'href' link starts from the beginning directory of the project -->
+    <link rel="stylesheet" , href="/css/styles.css">
+</head>
+
+<body>
+    <!-- '>header' and '>footer' are partial views; they exist in a separate file and provide a bunch of template code -->
+    <!-- 'errorMessage' is the a property object passed in throught res.render()-->
+
+    <div class="main-content">
+        {{>header}}
+        <p>{{errorMessage}}</p>
+    </div>
+    {{>footer}}
+</body>
+
+
+</html>
